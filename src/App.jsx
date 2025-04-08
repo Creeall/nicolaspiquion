@@ -10,6 +10,7 @@ import {
     SidebarSubTitle,
     SidebarTitle
 } from "./components/Sidebar.jsx";
+import Gallery from "./components/Gallery.jsx";
 import {Block, Content, Entreprise, Position, SubTitle, Date, Title, Text} from "./components/Content.jsx";
 import Rating from './components/Rating.jsx';
 
@@ -17,10 +18,10 @@ function App() {
 
     return (
         <>
-            <Sidebar id={"sidebar"}>
+            <Sidebar>
                 <div className="deco-top"></div>
                 <div className="deco-bottom"></div>
-                <SidebarHeader id={"sidebar-header"}>
+                <SidebarHeader>
                     <SidebarTitle>Nicolas PIQUION</SidebarTitle>
                     <SidebarSubTitle>Développeur web</SidebarSubTitle>
                     <SidebarImage src={profil_pic} alt="Nicolas PIQUION"/>
@@ -143,6 +144,11 @@ function App() {
                         Développement d'extension Wordpress (chat, documentation).
                     </Text>
                 </Block>
+
+                <Title>Galerie PAO et Web</Title>
+                <Text style={{'margin-bottom':'1em'}}>Nostalgie d'une époque (il y a plus de 14 ans) ou je débutais ma carrière…</Text>
+                <Gallery />
+
             </Content>
         </>
     )
