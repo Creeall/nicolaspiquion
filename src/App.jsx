@@ -17,8 +17,10 @@ function App() {
 
     return (
         <>
-            <Sidebar>
-                <SidebarHeader>
+            <Sidebar id={"sidebar"}>
+                <div className="deco-top"></div>
+                <div className="deco-bottom"></div>
+                <SidebarHeader id={"sidebar-header"}>
                     <SidebarTitle>Nicolas PIQUION</SidebarTitle>
                     <SidebarSubTitle>Développeur web</SidebarSubTitle>
                     <SidebarImage src={profil_pic} alt="Nicolas PIQUION"/>
@@ -36,18 +38,18 @@ function App() {
                     </ul>
                     <h2>Compétences</h2>
                     <ul>
-                        <li>Gestion serveurs web <Rating rating={3} /></li>
-                        <li>PHP <Rating rating={4} /></li>
-                        <li>MySQL <Rating rating={4} /></li>
-                        <li>SCSS <Rating rating={4} /></li>
-                        <li>Javascript <Rating rating={4} /></li>
-                        <li>WordPress <Rating rating={3} /></li>
-                        <li>Prestashop <Rating rating={3} /></li>
-                        <li>Adobe Photoshop, Illustrator, Indesign <Rating rating={4} /></li>
-                        <li>Angular <Rating rating={1} /></li>
-                        <li>Vue.js <Rating rating={1} /></li>
-                        <li>React <Rating rating={2} /></li>
-                        <li>React Native<Rating rating={2} /></li>
+                        <li>Gestion serveurs web <Rating rating={3}/></li>
+                        <li>PHP <Rating rating={4}/></li>
+                        <li>MySQL <Rating rating={4}/></li>
+                        <li>SCSS <Rating rating={4}/></li>
+                        <li>Javascript <Rating rating={4}/></li>
+                        <li>WordPress <Rating rating={3}/></li>
+                        <li>Prestashop <Rating rating={3}/></li>
+                        <li>Adobe Photoshop, Illustrator, Indesign <Rating rating={4}/></li>
+                        <li>Angular <Rating rating={1}/></li>
+                        <li>Vue.js <Rating rating={1}/></li>
+                        <li>React <Rating rating={2}/></li>
+                        <li>React Native<Rating rating={2}/></li>
                     </ul>
                     <h2>Langues</h2>
                     <ul>
@@ -56,7 +58,10 @@ function App() {
                     </ul>
                 </SidebarContent>
             </Sidebar>
+
+
             <Content>
+                <div className="deco-bottom"></div>
                 <Title>Profil</Title>
                 <Block>
                     <Text>Développeur web et Infographiste passionné, autodidacte, fort de plus de 10
@@ -68,37 +73,47 @@ function App() {
 
                 <Title>Formation</Title>
                 <Block>
-                    <SubTitle>Licence STAPS</SubTitle>
-                    <Date>de sept. 2002 à sept. 2004</Date>
+                    <Position>
+                        <SubTitle>Licence STAPS</SubTitle>
+                        <Date>de sept. 2002 à sept. 2004</Date>
+                    </Position>
                     <Entreprise>UFR STAPS Montpellier, Montpellier</Entreprise>
                 </Block>
 
                 <Title>Expériences professionnelles</Title>
                 <Block>
-                    <Position>Web designer</Position>
-                    <Date>de déc. 2006 à avr. 2007</Date>
+                    <Position>
+                        <SubTitle>Web designer</SubTitle>
+                        <Date>de déc. 2006 à avr. 2007</Date>
+                    </Position>
                     <Entreprise>StyloBille Studio, Fort de France (Martinique)</Entreprise>
                     <Text>Ajouter la compétence web design dans un studio graphique print.</Text>
                 </Block>
 
                 <Block>
-                    <Position>Chef de projet web et Graphiste Maquettiste PAO</Position>
-                    <Date>de juil. 2007 à avr. 2010</Date>
+                    <Position>
+                        <SubTitle>Chef de projet web et Graphiste Maquettiste PAO</SubTitle>
+                        <Date>de juil. 2007 à avr. 2010</Date>
+                    </Position>
                     <Entreprise>Studio CréeAll, Basse-Terre (Guadeloupe)</Entreprise>
                     <Text>Création d'identités visuelles, de sites web vitrine.<br/>
                         PAO Maquette de magazines de Sport Auto MekaMag.</Text>
                 </Block>
                 <Block>
-                    <Position>Développeur C++</Position>
-                    <Date>de mai 2013 à déc. 2013</Date>
+                    <Position>
+                        <SubTitle>Développeur C++</SubTitle>
+                        <Date>de mai 2013 à déc. 2013</Date>
+                    </Position>
                     <Entreprise>Projet personel, Montpellier</Entreprise>
                     <Text>Création d'une application Windows d'entraiement pour jeu de combat sur PC.<br/>
                         "FullPunish", avec boutique Laravel pour la vente de licences et le partage de scripts
                         d'entrainements.</Text>
                 </Block>
                 <Block>
-                    <Position>Développeur web</Position>
-                    <Date>de févr. 2016 à sept. 2024</Date>
+                    <Position>
+                        <SubTitle>Développeur web</SubTitle>
+                        <Date>de févr. 2016 à sept. 2024</Date>
+                    </Position>
                     <Entreprise>N-Gine Innovation, Nîmes</Entreprise>
                     <Text>Gestion de serveurs OVH, PlanetHoster sur Plesk, IspConfig, avec apache et
                         Nginx.<br/>
@@ -109,7 +124,7 @@ function App() {
                             <li>Comm'une Actu (publication d'actu dans les communes entre mairie, commerces et
                                 habitants),
                             </li>
-                            <li>Stellee (Messageries mobile anonymisée entre fournisseurs de contenu et leurs
+                            <li>Stellee (Messagerie mobile anonymisée entre fournisseurs de contenu et leurs
                                 abonnées).
                             </li>
                         </ul>
@@ -117,10 +132,11 @@ function App() {
                         Création de sites Wordpress pour Mairies de communes autour du Gard.
                     </Text>
                 </Block>
-
                 <Block>
-                    <Position>Développeur web</Position>
-                    <Date>de sept. 2024 à mars 2025</Date>
+                    <Position>
+                        <SubTitle>Développeur web</SubTitle>
+                        <Date>de sept. 2024 à mars 2025</Date>
+                    </Position>
                     <Entreprise>Sora Websoft, Nîmes</Entreprise>
                     <Text>Création de sites Prestashop et développement de modules prestashop.<br/>
                         Support technique pour la solution de caisse Sora Caisse POS.<br/>

@@ -1,27 +1,66 @@
 import styled from 'styled-components';
 
 export const Sidebar = styled.div`
-    background-color: #4a738f;
+    background-color: #e5ecf1;
     max-width: 380px;
     min-height: 100%;
     flex: 1;
     position: relative;
     overflow: hidden;
     padding-bottom: 5rem;
-    &:before {
-        content: "";
+   
+    .deco-top {
         position: absolute;
-        width: 90rem;
-        height: 90rem;
-        z-index: 0;
-        bottom: 3rem;
-        left: 50%;
-        transform: translateX(-50%);
-        display: block;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23e9eef3' /%3E%3C/svg%3E");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 140px;
+        background: #4a738f;
+        &:before{
+            content: "";
+            position: absolute;
+            bottom: -50%;
+            transform: translateX(-50%);
+            left: 50%;
+            width: 130%;
+            height: 210px;
+            background: #4a738f;
+            border-radius: 50%;
+        }
+    }
+    .deco-bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: #4a738f;
+        
+        &:before{
+            content: "";
+            position: absolute;
+            bottom: 50%;
+            transform: translateX(-50%);
+            left: 50%;
+            width: 130%;
+            height: 210px;
+            background: #e5ecf1;
+            border-radius: 50%;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        max-width: 100%;
+        padding-bottom: 1rem;
+        box-shadow:  0 -29px 20px 20px #000;
+        .deco-top {
+            height: 10%;
+            &:before {
+                height: 50vw;
+            }
+        }
+        .deco-bottom {
+            display: none;
+        }
     }
 `;
 export const SidebarHeader = styled.div`
@@ -32,35 +71,18 @@ export const SidebarHeader = styled.div`
     z-index: 1;
     overflow: hidden;
     padding: 20px 0 0 0;
-    &:before {
-        content: "";
-        position: absolute;
-        width: 50rem;
-        height: 50rem;
-        z-index: 0;
-        top: -35rem;
-        left: 50%;
-        transform: translateX(-50%);
-        display: block;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%234a738f' /%3E%3C/svg%3E");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
 `;
 
 export const SidebarTitle = styled.h1`
     font-size: 24px;
     margin: 0;
     color: #fff;
-    z-index: 1;
     line-height: 2.2;
 `;
 export const SidebarSubTitle = styled.p`
     font-size: 18px;
     margin: 0;
     color: #fff;
-    z-index: 1;
     font-weight: 300;
     margin-bottom: 20px;
     
@@ -70,9 +92,11 @@ export const SidebarImage = styled.img`
     border-radius: 50%;
     border: 8px solid #fff;
     height: auto;
-    width: 60%;
+    width: 68%;
     margin: 0 auto;
-    z-index: 1;
+    @media screen and (max-width: 768px) {
+        max-width: 250px;
+    }
 `;
 
 export const SidebarContent = styled.div`
