@@ -65,11 +65,7 @@ function App() {
                 <div className="deco-bottom"></div>
                 <Title>Profil</Title>
                 <Block>
-                    <Text>Développeur web et Infographiste passionné, autodidacte, fort de plus de 10
-                        années d'expériences, basé à Nîmes, je suis motivé par la création de solutions
-                        numériques innovantes qui améliorent l'expérience utilisateur.<br/>Ma maîtrise des
-                        technologies modernes et ma capacité à résoudre des problèmes complexes font
-                        de moi un atout précieux pour toute équipe de développement.</Text>
+                    <Text>Développeur web et infographiste passionné, autodidacte, avec plus de 15 ans d’expérience, basé à Nîmes. <br/>J’ai développé une expertise solide en PHP, JavaScript, CSS et MySQL, en menant des projets sur WordPress, PrestaShop et Laravel. <br/>Mon parcours me permet d’allier sens du design et rigueur technique pour créer des solutions numériques performantes, intuitives et visuellement soignées. Ma capacité à résoudre des problèmes complexes et à m’adapter rapidement aux évolutions technologiques fait de moi un atout précieux pour toute équipe de développement.</Text>
                 </Block>
 
                 <Title>Formation</Title>
