@@ -39,18 +39,21 @@ function App() {
                     </ul>
                     <h2>Compétences</h2>
                     <ul>
-                        <li>Gestion serveurs web <Rating rating={3}/></li>
+                        <li>Adobe Photoshop, Illustrator, Indesign <Rating rating={4}/></li>
                         <li>PHP <Rating rating={4}/></li>
                         <li>MySQL <Rating rating={4}/></li>
-                        <li>SCSS <Rating rating={4}/></li>
+                        <li>CSS <Rating rating={4}/></li>
                         <li>Javascript <Rating rating={4}/></li>
+                        <li>Laravel <Rating rating={3}/></li>
                         <li>WordPress <Rating rating={3}/></li>
                         <li>Prestashop <Rating rating={3}/></li>
-                        <li>Adobe Photoshop, Illustrator, Indesign <Rating rating={4}/></li>
+                        <li>Gestion serveurs web <Rating rating={3}/></li>
+                        <li>React <Rating rating={2}/></li>
+                        <li>React Native + Expo<Rating rating={2}/></li>
+                        <li>Symfony<Rating rating={2}/></li>
                         <li>Angular <Rating rating={1}/></li>
                         <li>Vue.js <Rating rating={1}/></li>
-                        <li>React <Rating rating={2}/></li>
-                        <li>React Native<Rating rating={2}/></li>
+                        <li>Docker <Rating rating={1}/></li>
                     </ul>
                     <h2>Langues</h2>
                     <ul>
