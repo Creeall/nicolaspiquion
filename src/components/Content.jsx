@@ -76,7 +76,7 @@ export const Date = styled.div`
 export const Entreprise = styled.p`
     font-size: 18px;
     font-weight: 400;
-    color: #f39c12;
+    color: #cc2b2b;
 `;
 export const Text = styled.div`
     font-size: 16px;

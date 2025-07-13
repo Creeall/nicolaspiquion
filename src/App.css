@@ -49,7 +49,7 @@ h3 {
     .star {
         color: #ffffff;
         &.filled {
-            color: #f39c12;
+            color: #cc2b2b;
         }
     }
 }
@@ -58,4 +58,7 @@ h3 {
         flex-direction: column;
     }
 }
-
+a {
+    color: #333;
+    font-style: italic;
+}

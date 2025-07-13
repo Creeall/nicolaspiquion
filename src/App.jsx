@@ -1,7 +1,7 @@
 import './App.css';
 import profil_pic from './assets/profil_pic.jpg';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faUser, faEnvelope, faPhone, faHome, faCalendar} from '@fortawesome/free-solid-svg-icons'
+import {faUser, faEnvelope, faPhone, faHome, faCalendar, faGlobe} from '@fortawesome/free-solid-svg-icons'
 import {
     Sidebar,
     SidebarHeader,
@@ -29,13 +29,13 @@ function App() {
                 <SidebarContent>
                     <h2>Informations personnelles</h2>
                     <ul>
-                        <li><FontAwesomeIcon icon={faUser}></FontAwesomeIcon> Nicolas PIQUION</li>
+                        <li><FontAwesomeIcon icon={faGlobe}></FontAwesomeIcon> <a
+                            href="https://studiocreeall.com" target="_blank">studiocreeall.com</a></li>
                         <li><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon> <a
                             href="mailto:contact@nicolaspiquion.fr">contact@nicolaspiquion.fr</a></li>
                         <li><FontAwesomeIcon icon={faPhone}></FontAwesomeIcon> <a href="tel:+33695415790">06 95 41 57
                             90</a></li>
-                        <li><FontAwesomeIcon icon={faHome}></FontAwesomeIcon> 72 rue Notre Dame <br/>30000 Nîmes</li>
-                        <li><FontAwesomeIcon icon={faCalendar}></FontAwesomeIcon> 20 mai 1978</li>
+                        <li><FontAwesomeIcon icon={faHome}></FontAwesomeIcon>Nîmes/Montpellier</li>
                     </ul>
                     <h2>Compétences</h2>
                     <ul>
@@ -65,7 +65,10 @@ function App() {
                 <div className="deco-bottom"></div>
                 <Title>Profil</Title>
                 <Block>
-                    <Text>Développeur web et infographiste passionné, autodidacte, avec plus de 15 ans d’expérience, basé à Nîmes. <br/>J’ai développé une expertise solide en PHP, JavaScript, CSS et MySQL, en menant des projets sur WordPress, PrestaShop et Laravel. <br/>Mon parcours me permet d’allier sens du design et rigueur technique pour créer des solutions numériques performantes, intuitives et visuellement soignées. Ma capacité à résoudre des problèmes complexes et à m’adapter rapidement aux évolutions technologiques fait de moi un atout précieux pour toute équipe de développement.</Text>
+                    <Text>Développeur web et infographiste passionné, autodidacte, avec plus de 15 ans d’expérience, basé à Nîmes.<br/>
+                        J’ai développé une expertise solide en PHP, JavaScript, CSS et MySQL, en menant des projets sur WordPress, PrestaShop et Laravel.
+                        Mon parcours me permet d’allier sens du design et rigueur technique pour créer des solutions numériques performantes, intuitives et visuellement soignées.<br/>
+                        Ma capacité à résoudre des problèmes complexes et à m’adapter rapidement aux évolutions technologiques fait de moi un atout précieux pour toute équipe de développement.</Text>
                 </Block>
 
                 <Title>Formation</Title>
@@ -94,7 +97,8 @@ function App() {
                     </Position>
                     <Entreprise>Studio CréeAll, Basse-Terre (Guadeloupe)</Entreprise>
                     <Text>Création d'identités visuelles, de sites web vitrine.<br/>
-                        PAO Maquette de magazines de Sport Auto MekaMag.</Text>
+                        PAO Maquette de magazines de Sport Auto MekaMag.<br />
+                        <a href="https://studiocreeall.com" target="_blank">studiocreeall.com</a></Text>
                 </Block>
                 <Block>
                     <Position>
@@ -104,7 +108,7 @@ function App() {
                     <Entreprise>Projet personel, Montpellier</Entreprise>
                     <Text>Création d'une application Windows d'entraiement pour jeu de combat sur PC.<br/>
                         "FullPunish", avec boutique Laravel pour la vente de licences et le partage de scripts
-                        d'entrainements.</Text>
+                        d'entrainements.<br/><a href="https://fullpunish.com" target="_blank">fullpunish.com</a> </Text>
                 </Block>
                 <Block>
                     <Position>
