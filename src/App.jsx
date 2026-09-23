@@ -1,7 +1,7 @@
 import './App.css';
 import profil_pic from './assets/profil_pic.jpg';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faUser, faEnvelope, faPhone, faHome, faCalendar, faGlobe} from '@fortawesome/free-solid-svg-icons'
+import {faEnvelope, faPhone, faHome, faGlobe} from '@fortawesome/free-solid-svg-icons'
 import {
     Sidebar,
     SidebarHeader,
@@ -27,7 +27,7 @@ function App() {
                     <SidebarImage src={profil_pic} alt="Nicolas PIQUION"/>
                 </SidebarHeader>
                 <SidebarContent>
-                    <h2>Informations personnelles</h2>
+                    <h2>Contact</h2>
                     <ul>
                         <li><FontAwesomeIcon icon={faGlobe}></FontAwesomeIcon> <a
                             href="https://studiocreeall.com" target="_blank">studiocreeall.com</a></li>
@@ -39,26 +39,22 @@ function App() {
                     </ul>
                     <h2>Compétences</h2>
                     <ul>
-                        <li>Adobe Photoshop, Illustrator, Indesign <Rating rating={4}/></li>
-                        <li>PHP <Rating rating={4}/></li>
-                        <li>MySQL <Rating rating={4}/></li>
-                        <li>CSS <Rating rating={4}/></li>
-                        <li>Javascript <Rating rating={4}/></li>
-                        <li>Laravel <Rating rating={3}/></li>
-                        <li>WordPress <Rating rating={3}/></li>
-                        <li>Prestashop <Rating rating={3}/></li>
-                        <li>Gestion serveurs web <Rating rating={3}/></li>
-                        <li>React <Rating rating={2}/></li>
-                        <li>React Native + Expo<Rating rating={2}/></li>
-                        <li>Symfony<Rating rating={2}/></li>
-                        <li>Angular <Rating rating={1}/></li>
-                        <li>Vue.js <Rating rating={1}/></li>
-                        <li>Docker <Rating rating={1}/></li>
+                        <li>PHP / Symfony <Rating rating={4}/></li>
+                        <li>Laravel <Rating rating={4}/></li>
+                        <li>JavaScript <Rating rating={4}/></li>
+                        <li>React / Vue / Next.js <Rating rating={3}/></li>
+                        <li>SQL / MySQL / PostgreSQL <Rating rating={4}/></li>
+                        <li>Docker / Linux <Rating rating={4}/></li>
+                        <li>Git / CI/CD <Rating rating={4}/></li>
+                        <li>WordPress / PrestaShop <Rating rating={4}/></li>
+                        <li>IA / Codex <Rating rating={4}/></li>
+                        <li>Suite Adobe <Rating rating={4}/></li>
+                        <li>Serveurs / Nginx <Rating rating={4}/></li>
                     </ul>
                     <h2>Langues</h2>
                     <ul>
-                        <li>Anglais <Rating rating={3}/></li>
-                        <li>Espagnol <Rating rating={1}/></li>
+                        <li>Anglais (B2) <Rating rating={4}/></li>
+                        <li>Espagnol (A2) <Rating rating={1}/></li>
                     </ul>
                 </SidebarContent>
             </Sidebar>
@@ -68,84 +64,70 @@ function App() {
                 <div className="deco-bottom"></div>
                 <Title>Profil</Title>
                 <Block>
-                    <Text>Développeur web et infographiste passionné, autodidacte, avec plus de 15 ans d’expérience, basé à Nîmes.<br/>
-                        J’ai développé une expertise solide en PHP, JavaScript, CSS et MySQL, en menant des projets sur WordPress, PrestaShop et Laravel.
-                        Mon parcours me permet d’allier sens du design et rigueur technique pour créer des solutions numériques performantes, intuitives et visuellement soignées.<br/>
-                        Ma capacité à résoudre des problèmes complexes et à m’adapter rapidement aux évolutions technologiques fait de moi un atout précieux pour toute équipe de développement.</Text>
+                    <Text>Développeur web full-stack autodidacte, 15+ ans d’expérience, spécialisé PHP/Symfony/Laravel.<br/>
+                        Expérience en maintenance applicative, modernisation de legacy, Docker, Linux et JavaScript.<br/>
+                        IA avec Codex : code, fonctionnalités, planification et orchestration multi-agents.</Text>
                 </Block>
 
-                <Title>Formation</Title>
-                <Block>
-                    <Position>
-                        <SubTitle>Licence STAPS</SubTitle>
-                        <Date>de sept. 2002 à sept. 2004</Date>
-                    </Position>
-                    <Entreprise>UFR STAPS Montpellier, Montpellier</Entreprise>
-                </Block>
-
-                <Title>Expériences professionnelles</Title>
+                <Title>Expériences</Title>
                 <Block>
                     <Position>
                         <SubTitle>Web designer</SubTitle>
                         <Date>de déc. 2006 à avr. 2007</Date>
                     </Position>
                     <Entreprise>StyloBille Studio, Fort de France (Martinique)</Entreprise>
-                    <Text>Ajouter la compétence web design dans un studio graphique print.</Text>
+                    <Text>Web design et intégration de sites pour un studio graphique.</Text>
                 </Block>
 
                 <Block>
                     <Position>
-                        <SubTitle>Chef de projet web et Graphiste Maquettiste PAO</SubTitle>
+                        <SubTitle>Chef de projet / graphiste maquettiste PAO</SubTitle>
                         <Date>de juil. 2007 à avr. 2010</Date>
                     </Position>
                     <Entreprise>Studio CréeAll, Basse-Terre (Guadeloupe)</Entreprise>
-                    <Text>Création d'identités visuelles, de sites web vitrine.<br/>
-                        PAO Maquette de magazines de Sport Auto MekaMag.<br />
-                        <a href="https://studiocreeall.com" target="_blank">studiocreeall.com</a></Text>
+                    <Text>Identités visuelles, sites vitrines et supports print.</Text>
                 </Block>
                 <Block>
                     <Position>
-                        <SubTitle>Développeur C++</SubTitle>
-                        <Date>de mai 2013 à déc. 2013</Date>
-                    </Position>
-                    <Entreprise>Projet personel, Montpellier</Entreprise>
-                    <Text>Création d'une application Windows d'entraiement pour jeu de combat sur PC.<br/>
-                        "FullPunish", avec boutique Laravel pour la vente de licences et le partage de scripts
-                        d'entrainements.<br/><a href="https://fullpunish.com" target="_blank">fullpunish.com</a> </Text>
-                </Block>
-                <Block>
-                    <Position>
-                        <SubTitle>Développeur web</SubTitle>
+                        <SubTitle>Développeur full stack LAMP</SubTitle>
                         <Date>de févr. 2016 à sept. 2024</Date>
                     </Position>
                     <Entreprise>N-Gine Innovation, Nîmes</Entreprise>
-                    <Text>Gestion de serveurs OVH, PlanetHoster sur Plesk, IspConfig, avec apache et
-                        Nginx.<br/>
-                        PHP, MySQL, Javascript, jQuery, Bootstrap, SCSS :<br/>
-                        Développement de backend support pour :
-                        <ul>
-                            <li>SportyCloud application mobile (course à pied),</li>
-                            <li>Comm'une Actu (publication d'actu dans les communes entre mairie, commerces et
-                                habitants),
-                            </li>
-                            <li>Stellee (Messagerie mobile anonymisée entre fournisseurs de contenu et leurs
-                                abonnées).
-                            </li>
-                        </ul>
-                        Création et maintenance de l'application de comptabilité de la Fédération Française de Handball.<br/>
-                        Création de sites Wordpress pour Mairies de communes autour du Gard.
+                    <Text>Développement et maintenance d’applications PHP/Laravel.<br/>
+                        Applications web et mobiles : SportyCloud, Comm’une Actu, Stellee.<br/>
+                        Déploiement et exploitation de serveurs Linux, Apache/Nginx et Plesk.<br/>
+                        Front-end JavaScript/React et gestion du code avec Git.<br/>
+                        Application web de comptabilité pour la Fédération Française de Handball.<br/>
+                        Sites WordPress pour 15 mairies autour du Gard.</Text>
+                </Block>
+                <Block>
+                    <Position>
+                        <SubTitle>Développeur full stack</SubTitle>
+                        <Date>de sept. 2024 à mars 2025</Date>
+                    </Position>
+                    <Entreprise>Sora Websoft, Nîmes</Entreprise>
+                    <Text>Création de sites PrestaShop, modules et support technique de caisse.<br/>
+                        Développement d’extensions WordPress : chat et documentation.
                     </Text>
                 </Block>
                 <Block>
                     <Position>
-                        <SubTitle>Développeur web</SubTitle>
-                        <Date>de sept. 2024 à mars 2025</Date>
+                        <SubTitle>Développeur fullstack Senior</SubTitle>
+                        <Date>de sept. 2025 à sept. 2026</Date>
                     </Position>
-                    <Entreprise>Sora Websoft, Nîmes</Entreprise>
-                    <Text>Création de sites Prestashop et développement de modules prestashop.<br/>
-                        Support technique pour la solution de caisse Sora Caisse POS.<br/>
-                        Développement d'extension Wordpress (chat, documentation).
-                    </Text>
+                    <Entreprise>E-SI (Groupe CAPELLE), Nîmes</Entreprise>
+                    <Text>MCO et modernisation d’applications PHP/Symfony legacy.<br/>
+                        Dockerisation, environnements Linux et administration serveurs.<br/>
+                        Bases de données multi-SGBD : PostgreSQL, Oracle, SQL Server, MySQL.<br/>
+                        IA avec Codex : génération de code, fonctionnalités et documentation.<br/>
+                        Planification, orchestration multi-agents et tests unitaires/E2E.</Text>
+                </Block>
+
+                <Title>Contexte technique personnel</Title>
+                <Block>
+                    <Text>Environnement personnel orienté DevOps et automatisation : VPS chez IONOS administré avec Plesk, Portainer et plusieurs applications conteneurisées.<br/>
+                        Mise en place de workflows GitHub CI/CD et d’une instance n8n pour expérimenter l’automatisation.<br/>
+                        Développement de projets personnels en React Native.</Text>
                 </Block>
 
                 <Title>Galerie PAO et Web</Title>
