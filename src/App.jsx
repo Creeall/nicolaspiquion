@@ -65,7 +65,8 @@ function App() {
                 <Title>Profil</Title>
                 <Block>
                     <Text>Développeur web full-stack autodidacte, 15+ ans d’expérience, spécialisé PHP/Symfony/Laravel.<br/>
-                        Expérience en maintenance applicative, modernisation de legacy, Docker, Linux et JavaScript.<br/>
+                        Expérience en maintenance applicative, modernisation de projets legacy (php 5.2, 5.6), Docker, Linux et JavaScript.<br/>
+                        Temps libres sur React et React Native ou tout autre techno pour produire une application quali rapidement assisté par l'IA.<br/>
                         IA avec Codex : code, fonctionnalités, planification et orchestration multi-agents.</Text>
                 </Block>
 
@@ -131,7 +132,7 @@ function App() {
                 </Block>
 
                 <Title>Galerie PAO et Web</Title>
-                <Text style={{'margin-bottom':'1em'}}>Nostalgie d'une époque (il y a plus de 14 ans) ou je débutais ma carrière…</Text>
+                <Text style={{'margin-bottom':'1em'}}>Nostalgie d'une époque (il y a plus de 20 ans) ou je débutais ma carrière…</Text>
                 <Gallery />
 
             </Content>
