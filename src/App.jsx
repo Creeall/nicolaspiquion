@@ -66,7 +66,7 @@ function App() {
                 <Block>
                     <Text>Développeur web full-stack autodidacte, 15+ ans d’expérience, spécialisé PHP/Symfony/Laravel.<br/>
                         Expérience en maintenance applicative, modernisation de projets legacy (php 5.2, 5.6), Docker, Linux et JavaScript.<br/>
-                        Temps libres sur React et React Native ou tout autre techno pour produire une application quali rapidement assisté par l'IA.<br/>
+                        Temps libres sur React et React Native ou tout autre techno pour produire une application quali rapidement assisté par l'IA.
                         IA avec Codex : code, fonctionnalités, planification et orchestration multi-agents.</Text>
                 </Block>
 
